@@ -70,9 +70,9 @@ shifter.vi (Main VI)
 
 The system is based on the fundamental relationship between engine torque, gear ratios, and wheel speed:
 
-$Wheel Torque = Engine Torque × Gear Ratio × Final Drive Ratio$
+$Wheel Torque = Engine Torque \ \times \ Gear Ratio \ \times \ Final Drive Ratio$
 
-$Vehicle Speed = \frac{Engine RPM × Tyre Circumference × 60}{63360} \div (Gear Ratio × Final Drive Ratio)$
+$Vehicle Speed = \frac{Engine RPM \ \times \ Tyre Circumference \ \times \ 60}{63360} \div (Gear Ratio × Final Drive Ratio)$
 
 *60: converts Engine Revs per minute into Revs per hour*
 
@@ -94,10 +94,10 @@ This graph, showing the torque against wheel speed for my 2011 Renault Clio, hig
 
 The intersect.vi SubVI uses the standard line intersection formula:
 
-For two lines defined by points $(x₁,y₁),(x₂,y₂)$ and $(x₃,y₃),(x₄,y₄)$:
+For two lines defined by points $(x_{1},y_{1}),(x_{2},y_{2})$ and $(x_{3},y_{3}),(x_{4},y_{4})$:
 
 **Intersection Point:**
 
-$x =\frac{(x₁~y₂-y₁x₂)(x₃-x₄) - (x₁-x₂)(x₃y₄-y₃x₄)}{(x₁-x₂)(y₃-y₄) - (y₁-y₂)(x₃-x₄)}$
+$x =\frac{(x_{1}~y_{2}-y_{1}x_{2})(x_{3}-x_{4}) - (x_{1}-x_{2})(x_{3}y_{4}-y_{3}x_{4})}{(x_{1}-x_{2})(y_{3}-y_{4}) - (y_{1}-y_{2})(x_{3}-x_{4})}$
 
-$y = \frac{(x₁y₂-y₁x₂)(y₃-y₄) - (y₁-y₂)(x₃y₄-y₃x₄)}{(x₁-x₂)(y₃-y₄) - (y₁-y₂)(x₃-x₄)}$
+$y = \frac{(x_{1}y_{2}-y_{1}x_{2})(y_{3}-y_{4}) - (y_{1}-y_{2})(x_{3}y_{4}-y_{3}x_{4})}{(x_{1}-x_{2})(y_{3}-y_{4}) - (y_{1}-y_{2})(x_{3}-x_{4})}$
