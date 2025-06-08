@@ -24,9 +24,9 @@ shifter.vi (Main VI)
 - Identifies and displays recommended gear to user
 
 **Screenshot:**
-[Insert shifter.vi front panel screenshot here]
+![shifter_block](https://raw.githubusercontent.com/WllDxn/Gearshift-Indicator/refs/heads/master/img/shifter_block.png)
 
-[Insert shifter.vi block diagram screenshot here]
+![shifter_front](https://raw.githubusercontent.com/WllDxn/Gearshift-Indicator/refs/heads/master/img/shifter_front.png)
 
 ### shift_points.vi
 **Purpose:** Core calculation engine that determines optimal gear based on torque curves.
@@ -36,7 +36,7 @@ shifter.vi (Main VI)
 - Uses intersect.vi to determine gear transition points
 
 **Screenshot:**
-[Insert shift_points.vi front panel screenshot here]
+![shift_points](https://raw.githubusercontent.com/WllDxn/Gearshift-Indicator/refs/heads/master/img/shift_points_block.png)
 
 ### car_config.vi
 **Purpose:** Configuration interface for vehicle-specific parameters.
@@ -48,7 +48,8 @@ shifter.vi (Main VI)
 - Calculates torque output for each gear at any given speed
 
 **Screenshot:**
-[Insert car_config.vi front panel screenshot here]
+![car_config_block](https://raw.githubusercontent.com/WllDxn/Gearshift-Indicator/refs/heads/master/img/car_config_block.png)
+![car_config_front](https://raw.githubusercontent.com/WllDxn/Gearshift-Indicator/refs/heads/master/img/car_config_front.png)
 
 ### intersect.vi
 **Purpose:** Mathematical utility for determining line intersections in torque curves.
@@ -61,7 +62,7 @@ shifter.vi (Main VI)
 - When no intersection occurs between two gear curves, returns maximum possible speed delivered by gear
 
 **Screenshot:**
-[Insert intersect.vi front panel screenshot here]
+![intersect](https://raw.githubusercontent.com/WllDxn/Gearshift-Indicator/refs/heads/master/img/intersect_block.png)
 
 ## Mathematical and Physical Principles
 
@@ -88,7 +89,7 @@ The system operates on the principle that the optimal gear is the one that can d
 
 This graph, showing the torque against wheel speed for my 2011 Renault Clio, highlights the optimal shift points as calculated by this system. 
 
-[Insert gearedTorqueMPH.png]
+![gearedTorqueMPH](https://raw.githubusercontent.com/WllDxn/Gearshift-Indicator/refs/heads/master/img/gearedTorqeMPH.png)
 ### Line Intersection
 
 The intersect.vi SubVI uses the standard line intersection formula:
