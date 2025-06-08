@@ -72,7 +72,7 @@ The system is based on the fundamental relationship between engine torque, gear 
 
 $Wheel Torque = Engine Torque \ \times \ Gear Ratio \ \times \ Final Drive Ratio$
 
-$Vehicle Speed = \frac{Engine RPM \ \times \ Tyre Circumference \ \times \ 60}{63360} \div (Gear Ratio × Final Drive Ratio)$
+$Vehicle Speed = \frac{Engine RPM \ \times \ Tyre Circumference \ \times \ 60}{63360} \div (Gear Ratio \ \times \ Final Drive Ratio)$
 
 *60: converts Engine Revs per minute into Revs per hour*
 
